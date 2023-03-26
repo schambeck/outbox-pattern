@@ -1,4 +1,6 @@
 # outbox-pattern
+[![build](https://github.com/schambeck/outbox-pattern/actions/workflows/maven.yml/badge.svg)](https://github.com/schambeck/outbox-pattern/actions/workflows/maven.yml)
+
 Outbox Design Pattern implementation.
 
 # Tech Stack
