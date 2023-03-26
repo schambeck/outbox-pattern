@@ -3,6 +3,14 @@ CREATE_ENDPOINT = ${BASE_URL}/orders
 ORDER_ID = 5017dc5b-bd54-45f8-9afa-588b875f50e6
 CLOSE_ENDPOINT = ${BASE_URL}/orders/${ORDER_ID}/close
 
+# Maven
+
+dist:
+	./mvnw clean package
+
+run:
+	java -jar target/outbox-pattern-1.0.0.jar
+
 # Docker
 
 compose-up:

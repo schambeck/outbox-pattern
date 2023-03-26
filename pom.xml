@@ -10,12 +10,17 @@
     </parent>
     <groupId>com.schambeck.design</groupId>
     <artifactId>outbox-pattern</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>outbox-pattern</name>
     <description>outbox-pattern</description>
+
     <properties>
-        <java.version>19</java.version>
+        <java.version>17</java.version>
+        <springdoc.version>2.0.4</springdoc.version>
+        <mapstruct.version>1.5.3.Final</mapstruct.version>
+        <rabbitmq-mock.version>1.2.0</rabbitmq-mock.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -36,7 +41,7 @@
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-            <version>2.0.4</version>
+            <version>${springdoc.version}</version>
         </dependency>
         <dependency>
             <groupId>org.flywaydb</groupId>
@@ -61,12 +66,12 @@
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
-            <version>1.5.3.Final</version>
+            <version>${mapstruct.version}</version>
         </dependency>
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct-processor</artifactId>
-            <version>1.5.3.Final</version>
+            <version>${mapstruct.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -81,7 +86,7 @@
         <dependency>
             <groupId>com.github.fridujo</groupId>
             <artifactId>rabbitmq-mock</artifactId>
-            <version>1.2.0</version>
+            <version>${rabbitmq-mock.version}</version>
             <scope>test</scope>
         </dependency>
 
