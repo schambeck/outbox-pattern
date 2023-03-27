@@ -21,13 +21,13 @@ compose-down:
 # Endpoints
 
 order-create:
-	http POST ${CREATE_ENDPOINT} \
+	http -v POST ${CREATE_ENDPOINT} \
 		clientId=796f5390-6a32-4f3f-a4f9-219cea1d5336 \
 		issuedDate=2023-02-03 \
-		totalCost:=2000 \
+		totalCost:=6 \
 		items[0][productId]=7fba7340-d24f-4548-a327-add2cd2ad4a9 \
-		items[0][quantity]:=2 \
-		items[0][price]=3
+		items[0][price]:=3 \
+		items[0][quantity]:=2
 
 order-close:
 	http POST ${CLOSE_ENDPOINT}
