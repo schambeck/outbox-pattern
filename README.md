@@ -8,7 +8,7 @@ Outbox Design Pattern implementation.
 - Spring Boot
 - PostgreSQL, Flyway
 - RabbitMQ
-- JUnit 5, Mockito, JaCoCo
+- JUnit 5, Mockito, JaCoCo, Testcontainers
 
 # Running project
 
