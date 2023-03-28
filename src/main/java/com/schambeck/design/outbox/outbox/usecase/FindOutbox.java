@@ -13,7 +13,7 @@ import java.util.List;
 public class FindOutbox {
     private final OutboxRepository repository;
 
-    public List<OutboxEntity> findAllByCreatedDateBefore(LocalDateTime createdDate) {
-        return repository.findAllByCreatedDateBefore(createdDate);
+    public List<OutboxEntity> findAllByCreatedDateBeforeOrderByCreatedDate(LocalDateTime createdDate) {
+        return repository.findAllByCreatedDateBeforeOrderByCreatedDate(createdDate);
     }
 }

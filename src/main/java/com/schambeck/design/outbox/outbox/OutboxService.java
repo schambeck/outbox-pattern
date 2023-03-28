@@ -34,7 +34,7 @@ public class OutboxService {
         }
     }
 
-    public List<OutboxEntity> findAllByCreatedDateBefore(LocalDateTime createdDate) {
-        return findOutbox.findAllByCreatedDateBefore(createdDate);
+    public List<OutboxEntity> findAllByCreatedDateBeforeOrderByCreatedDate(LocalDateTime createdDate) {
+        return findOutbox.findAllByCreatedDateBeforeOrderByCreatedDate(createdDate);
     }
 }

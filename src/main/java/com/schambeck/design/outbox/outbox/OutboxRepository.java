@@ -10,5 +10,5 @@ import java.util.UUID;
 
 @Repository
 public interface OutboxRepository extends JpaRepository<OutboxEntity, UUID> {
-    List<OutboxEntity> findAllByCreatedDateBefore(LocalDateTime createdDate);
+    List<OutboxEntity> findAllByCreatedDateBeforeOrderByCreatedDate(LocalDateTime createdDate);
 }

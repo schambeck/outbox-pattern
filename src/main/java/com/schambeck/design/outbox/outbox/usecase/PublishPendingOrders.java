@@ -21,7 +21,7 @@ public class PublishPendingOrders {
 
     @Transactional
     public void execute() {
-        List<OutboxEntity> outboxes = outboxService.findAllByCreatedDateBefore(LocalDateTime.now());
+        List<OutboxEntity> outboxes = outboxService.findAllByCreatedDateBeforeOrderByCreatedDate(LocalDateTime.now());
         log.debug("Outboxes found: {}", outboxes.size());
         for (OutboxEntity outbox : outboxes) {
             OrderEntity order = orderService.findById(outbox.getOrderId());
