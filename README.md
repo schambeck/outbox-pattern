@@ -12,7 +12,7 @@ A separate *Message Relay* process publishes the events inserted into database t
 - Spring Boot
 - PostgreSQL, Flyway
 - RabbitMQ
-- JUnit 5, Mockito, JaCoCo, Testcontainers
+- JUnit 5, Mockito, JaCoCo
 
 # Running project
 
@@ -61,7 +61,7 @@ $ Pass: guest
 ```
 
 ##### Response
-**Code** : `200 CREATED`
+**Code** : `201 CREATED`
 ```json
 {
   "id": "7c08629a-4d23-4b6d-9363-b0f0d7303aa4",
@@ -91,7 +91,7 @@ $ Pass: guest
 None
 
 ##### Response
-**Code** : `200 CREATED`
+**Code** : `200 OK`
 </details>
 ------------------------------------------------------------------------------------------
 
